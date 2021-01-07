@@ -21,7 +21,7 @@ const MyResumeButton = styled.button`
 	width: 100%;
 	height: 40px;
 	text-transform: uppercase;
-	font-family: "Lato";
+	font-family: "Lato", sans-serif;
 	font-weight: 700;
 	color: #797d7f;
 	transition: all 0.1s ease-in;

@@ -15,12 +15,7 @@ const SideBarWrapper = styled.div`
 `;
 
 const ContentWrapper = styled.div`
-	width: 100%;
 	padding-left: 300px;
-`;
-
-const PageWrapper = styled.div`
-	padding: 2rem;
 `;
 
 export default function App() {
@@ -43,9 +38,7 @@ export default function App() {
 				<SideBarWrapper>
 					<SideBarComponent />
 				</SideBarWrapper>
-				<ContentWrapper>
-					<PageWrapper>{renderPage(page)}</PageWrapper>
-				</ContentWrapper>
+				<ContentWrapper>{renderPage(page)}</ContentWrapper>
 			</NavigationContext.Provider>
 		</>
 	);
