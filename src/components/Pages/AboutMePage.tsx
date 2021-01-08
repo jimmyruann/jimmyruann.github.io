@@ -10,9 +10,10 @@ import { ReactComponent as BackendSVG } from "../../assets/images/backend.svg";
 import { ReactComponent as DatabaseSVG } from "../../assets/images/database.svg";
 
 const LargeHeading = styled.h1`
-	font-family: "Roboto", sans-serif;
-	font-size: 7vw;
+	/* font-family: "Roboto", sans-serif; */
+	font-weight: 500;
 	color: #17a589;
+	font-size: 2rem;
 `;
 
 const SubHeading = styled(LargeHeading)`
@@ -43,8 +44,44 @@ const VerticalAlign = styled(Container)`
 
 export default function AboutMePage() {
 	return (
-		<Container fluid>
-			<LargeHeading>Hello</LargeHeading>
+		<Container className="py-4 px-5 w-75 mw-100">
+			<LargeHeading className="display-4">Biography</LargeHeading>
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam venenatis ac ligula ac tempus. Nunc
+				libero nibh, egestas quis nisl non, dapibus fermentum nibh. Suspendisse sagittis justo tempus tristique
+				lobortis. Ut hendrerit blandit enim in tincidunt. Fusce facilisis elit non dictum sollicitudin. Nullam
+				at dui molestie, vehicula nisl sed, tristique turpis. Aliquam erat volutpat. Aliquam semper velit
+				tortor, nec condimentum purus tempor vel.
+			</p>
+			<LargeHeading className="display-4">I Like</LargeHeading>
+			<Row className="mt-3">
+				<Col lg={12}>
+					<Row>
+						<Col lg={5}>
+							<FrontendSVG className="w-100 h-auto" />
+						</Col>
+						<Col lg={6}>Fontend</Col>
+					</Row>
+				</Col>
+				<Col lg={12}>
+					<Row className="d-flex flex-row-reverse">
+						<Col lg={5}>
+							<BackendSVG className="w-100 h-auto" />
+						</Col>
+						<Col lg={6}>Backend</Col>
+					</Row>
+				</Col>
+
+				<Col lg={12}>
+					<Row>
+						<Col lg={5}>
+							<DatabaseSVG className="w-100 h-auto" />
+						</Col>
+						<Col lg={6}>Database</Col>
+					</Row>
+				</Col>
+			</Row>
+			{/* <LargeHeading>Hello</LargeHeading>
 			<SubHeading>I'm Manjue Jimmy Ruan.</SubHeading>
 			<SubHeadingText>JavaScript Full Stack Web Develope, University Student</SubHeadingText>
 			<Row className="mt-5">
@@ -78,82 +115,8 @@ export default function AboutMePage() {
 						Database
 					</ImageText>
 				</Col>
-			</Row>
-			<br/>
-			same<br/>
-			same<br/>
-			same<br/>
-			same<br/>
-			same<br/>
-			same<br/>
-			same<br/>
-			same<br/>
-			same<br/>
-			same<br/>
-			same<br/>
-			same<br/>
-			same<br/>
-			same<br/>
-			same<br/>
-			same<br/>
-			same<br/>
-			same<br/>
-			same<br/>
-			same<br/>
-			same<br/>
-			same<br/>
-			same<br/>
-			same<br/>
-			same<br/>
-			same<br/>
-			same<br/>
-			same<br/>
-			same<br/>
-			same<br/>
-			same<br/>
-			same
+			</Row> */}
 		</Container>
-		// <VerticalAlign id="aboutMePage">
-		// 	{/* <BackgroundAnimationComponent /> */}
-
-		// 	<div>
-		// 		<LargeHeading>Hello</LargeHeading>
-		// 		<SubHeading>I'm Manjue Jimmy Ruan.</SubHeading>
-		// 		<SubHeadingText>JavaScript Full Stack Web Develope, University Student</SubHeadingText>
-		// 		<Row className="mt-5">
-		// 			<Col lg={4}>
-		// 				<FrontendSVG className="w-100" />
-		// 				<ImageText
-		// 					style={{
-		// 						color: "#3178C6",
-		// 					}}
-		// 				>
-		// 					Frontend
-		// 				</ImageText>
-		// 			</Col>
-		// 			<Col lg={4}>
-		// 				<BackendSVG className="w-100" />
-		// 				<ImageText
-		// 					style={{
-		// 						color: "#272822",
-		// 					}}
-		// 				>
-		// 					Backend
-		// 				</ImageText>
-		// 			</Col>
-		// 			<Col lg={4}>
-		// 				<DatabaseSVG className="w-100" />
-		// 				<ImageText
-		// 					style={{
-		// 						color: "#10AA50",
-		// 					}}
-		// 				>
-		// 					Database
-		// 				</ImageText>
-		// 			</Col>
-		// 		</Row>
-		// 	</div>
-		// </VerticalAlign>
 	);
 }
 
