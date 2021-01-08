@@ -43,68 +43,138 @@ const VerticalAlign = styled(Container)`
 
 export default function AboutMePage() {
 	return (
-		<VerticalAlign id="aboutMePage" fluid>
-			<BackgroundAnimationComponent />
+		<Container fluid>
+			<LargeHeading>Hello</LargeHeading>
+			<SubHeading>I'm Manjue Jimmy Ruan.</SubHeading>
+			<SubHeadingText>JavaScript Full Stack Web Develope, University Student</SubHeadingText>
+			<Row className="mt-5">
+				<Col lg={4}>
+					<FrontendSVG className="w-100" />
+					<ImageText
+						style={{
+							color: "#3178C6",
+						}}
+					>
+						Frontend
+					</ImageText>
+				</Col>
+				<Col lg={4}>
+					<BackendSVG className="w-100" />
+					<ImageText
+						style={{
+							color: "#272822",
+						}}
+					>
+						Backend
+					</ImageText>
+				</Col>
+				<Col lg={4}>
+					<DatabaseSVG className="w-100" />
+					<ImageText
+						style={{
+							color: "#10AA50",
+						}}
+					>
+						Database
+					</ImageText>
+				</Col>
+			</Row>
+			<br/>
+			same<br/>
+			same<br/>
+			same<br/>
+			same<br/>
+			same<br/>
+			same<br/>
+			same<br/>
+			same<br/>
+			same<br/>
+			same<br/>
+			same<br/>
+			same<br/>
+			same<br/>
+			same<br/>
+			same<br/>
+			same<br/>
+			same<br/>
+			same<br/>
+			same<br/>
+			same<br/>
+			same<br/>
+			same<br/>
+			same<br/>
+			same<br/>
+			same<br/>
+			same<br/>
+			same<br/>
+			same<br/>
+			same<br/>
+			same<br/>
+			same<br/>
+			same
+		</Container>
+		// <VerticalAlign id="aboutMePage">
+		// 	{/* <BackgroundAnimationComponent /> */}
 
-			<div>
-				<LargeHeading>Hello</LargeHeading>
-				<SubHeading>I'm Manjue Jimmy Ruan.</SubHeading>
-				<SubHeadingText>JavaScript Full Stack Web Develope, University Student</SubHeadingText>
-				<Row className="mt-5">
-					<Col lg={4}>
-						<FrontendSVG className="w-100" />
-						<ImageText
-							style={{
-								color: "#3178C6",
-							}}
-						>
-							Frontend
-						</ImageText>
-					</Col>
-					<Col lg={4}>
-						<BackendSVG className="w-100" />
-						<ImageText
-							style={{
-								color: "#272822",
-							}}
-						>
-							Backend
-						</ImageText>
-					</Col>
-					<Col lg={4}>
-						<DatabaseSVG className="w-100" />
-						<ImageText
-							style={{
-								color: "#10AA50",
-							}}
-						>
-							Database
-						</ImageText>
-					</Col>
-				</Row>
-			</div>
-		</VerticalAlign>
+		// 	<div>
+		// 		<LargeHeading>Hello</LargeHeading>
+		// 		<SubHeading>I'm Manjue Jimmy Ruan.</SubHeading>
+		// 		<SubHeadingText>JavaScript Full Stack Web Develope, University Student</SubHeadingText>
+		// 		<Row className="mt-5">
+		// 			<Col lg={4}>
+		// 				<FrontendSVG className="w-100" />
+		// 				<ImageText
+		// 					style={{
+		// 						color: "#3178C6",
+		// 					}}
+		// 				>
+		// 					Frontend
+		// 				</ImageText>
+		// 			</Col>
+		// 			<Col lg={4}>
+		// 				<BackendSVG className="w-100" />
+		// 				<ImageText
+		// 					style={{
+		// 						color: "#272822",
+		// 					}}
+		// 				>
+		// 					Backend
+		// 				</ImageText>
+		// 			</Col>
+		// 			<Col lg={4}>
+		// 				<DatabaseSVG className="w-100" />
+		// 				<ImageText
+		// 					style={{
+		// 						color: "#10AA50",
+		// 					}}
+		// 				>
+		// 					Database
+		// 				</ImageText>
+		// 			</Col>
+		// 		</Row>
+		// 	</div>
+		// </VerticalAlign>
 	);
 }
 
-interface ComponentProps {}
+// interface ComponentProps {}
 
-const BackgroundAnimationComponent: React.FC<ComponentProps> = (props: ComponentProps) => {
-	let x = 50;
-	const y = 50;
+// const BackgroundAnimationComponent: React.FC<ComponentProps> = (props: ComponentProps) => {
+// 	let x = 50;
+// 	const y = 50;
 
-	//See annotations in JS for more information
-	const setup = (p5: p5Types, canvasParentRef: Element) => {
-		const canvas = p5.createCanvas(window.innerWidth, window.innerHeight).parent(canvasParentRef);
-		canvas.position(0, 0);
-		canvas.style("z-index", "-100");
-	};
+// 	//See annotations in JS for more information
+// 	const setup = (p5: p5Types, canvasParentRef: Element) => {
+// 		const canvas = p5.createCanvas(window.innerWidth, window.innerHeight).parent(canvasParentRef);
+// 		canvas.position(0, 0);
+// 		canvas.style("z-index", "-100");
+// 	};
 
-	const draw = (p5: p5Types) => {
-		p5.background("white");
-		p5.ellipse(x, y, 70, 70);
-		x++;
-	};
+// 	const draw = (p5: p5Types) => {
+// 		p5.background("white");
+// 		p5.ellipse(x, y, 70, 70);
+// 		x++;
+// 	};
 
-	return <Sketch setup={setup} draw={draw} />;
-};
+// 	return <Sketch setup={setup} draw={draw} />;
+// };

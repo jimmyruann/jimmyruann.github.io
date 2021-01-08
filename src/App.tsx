@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import styled from "styled-components";
 
 import SideBarComponent from "./components/SideBarComponent";
 import NavigationContext from "./context/NavigationContext";
@@ -8,14 +7,17 @@ import AboutMePage from "./components/Pages/AboutMePage";
 import PortfolioPage from "./components/Pages/PortfolioPage";
 import ContactPage from "./components/Pages/ContactPage";
 
-const SideBarWrapper = styled.div`
-	width: 300px;
-	height: 100vh;
-	position: fixed;
-`;
+import { Row, Col } from "react-bootstrap";
 
-const ContentWrapper = styled.div`
-	padding-left: 300px;
+import styled from "styled-components";
+
+const SideBarCol = styled(Col)`
+	padding: 0;
+	max-width: 300px;
+	background-color: #2d2d2d;
+	@media (max-width: 767.98px) {
+		max-width: 100%;
+	}
 `;
 
 export default function App() {
@@ -35,10 +37,14 @@ export default function App() {
 	return (
 		<>
 			<NavigationContext.Provider value={{ page, setPage }}>
-				<SideBarWrapper>
-					<SideBarComponent />
-				</SideBarWrapper>
-				<ContentWrapper>{renderPage(page)}</ContentWrapper>
+				<Row className="m-0 d-flex h-100">
+					<SideBarCol md={6} lg={4}>
+						<SideBarComponent />
+					</SideBarCol>
+					<Col md={6} lg={8} className="p-0 mw-100 flex-grow-1">
+						{renderPage(page)}
+					</Col>
+				</Row>
 			</NavigationContext.Provider>
 		</>
 	);

@@ -5,24 +5,44 @@ import BottomSection from "./SideBarSections/BottomSection";
 import NavigationSection from "./SideBarSections/NavigationSection";
 
 const SideBarBase = styled.div`
-	background-color: #2d2d2d;
-	height: 100%;
-	margin: 0;
+	min-height: 100vh;
+	max-width: 50%;
+	min-width: 300px;
+	margin: 0 auto;
 	color: #fff;
 	display: flex;
 	justify-content: space-between;
 	flex-direction: column;
-	z-index: 100;
-	overflow-x: auto;
-	overflow-y: auto;
+	font-family: var(--font-family-sans-serif);
+	@media (max-width: 767.98px) {
+		min-height: auto;
+	}
+`;
+
+type ResponsiveNavigationOptions = {
+	screen: "desktop" | "mobile";
+};
+
+const ResponsiveNavigationBar = styled.div<ResponsiveNavigationOptions>`
+	display: ${(props) => (props.screen === "desktop" ? "block" : "none")};
+	@media (max-width: 767.98px) {
+		display: ${(props) => (props.screen === "desktop" ? "none" : "block")};
+	}
 `;
 
 export default function SideBarComponent() {
 	return (
-		<SideBarBase>
-			<TopSection />
-			<NavigationSection />
-			<BottomSection />
-		</SideBarBase>
+		<>
+			<SideBarBase className="sticky-top">
+				<TopSection />
+				<ResponsiveNavigationBar screen="desktop">
+					<NavigationSection screen="desktop" />
+				</ResponsiveNavigationBar>
+				<BottomSection />
+				<ResponsiveNavigationBar screen="mobile">
+					<NavigationSection screen="mobile" />
+				</ResponsiveNavigationBar>
+			</SideBarBase>
+		</>
 	);
 }

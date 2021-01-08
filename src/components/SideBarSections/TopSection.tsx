@@ -14,9 +14,7 @@ import MaterialUiIcon from "../../assets/images/icon/material-ui.png";
 import GraphlQLIcon from "../../assets/images/icon/graphql.png";
 import { IconListType } from "../../types";
 
-const SideBarNavigationSection = styled.div`
-	padding: 2rem 2rem 1rem 2rem;
-`;
+const SideBarNavigationSection = styled.div``;
 
 const ImageNoDragAndSelect = styled.img`
 	user-select: none;
@@ -25,7 +23,7 @@ const ImageNoDragAndSelect = styled.img`
 `;
 
 const MyImage = styled(ImageNoDragAndSelect)`
-	border-radius: 50%;
+	border-radius: 5%;
 	max-width: 100%;
 	max-height: 100%;
 	margin-bottom: 1rem;
@@ -34,7 +32,6 @@ const MyImage = styled(ImageNoDragAndSelect)`
 const NameHeading = styled.h1`
 	text-transform: uppercase;
 	font-size: 21px;
-	font-family: "Segoe UI";
 	text-align: center;
 `;
 
@@ -104,7 +101,7 @@ export default function TopSection() {
 
 	return (
 		<>
-			<SideBarNavigationSection id="sidebarTopSection">
+			<SideBarNavigationSection id="sidebarTopSection" className="p-4">
 				<MyImage src={MyImageFile} alt="Jimmy Ruan" />
 				<NameHeading>Manjue Jimmy Ruan</NameHeading>
 				<NameSubHeading>Full Stack Web Developer</NameSubHeading>
