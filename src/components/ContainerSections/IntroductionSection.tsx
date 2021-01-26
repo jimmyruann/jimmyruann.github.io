@@ -40,7 +40,7 @@ export default function IntroductionSection() {
 					<span style={{ color: "#F4D03F" }}>Back-End</span> Developer |{" "}
 					<span style={{ color: "#F5CBA7" }}>Human</span> | <span style={{ color: "#ABEBC6" }}>Earth</span>
 				</ScaledableText>
-				<CustomButton className="mt-3 px-5 py-2">Let's Talk</CustomButton>
+				<a href="#contact"><CustomButton className="mt-3 px-5 py-2">Let's Talk</CustomButton></a>
 			</div>
 		</IntroductionWrapper>
 	);

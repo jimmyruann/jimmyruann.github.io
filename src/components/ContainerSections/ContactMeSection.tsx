@@ -30,8 +30,8 @@ const ContactFormBox = styled(Container)`
 
 const SendEmailImg = styled.img`
 	max-width: 200px;
-	display: block;
-	margin: 0 auto;
+	height: auto;
+	width: 70%;
 `;
 
 const SubmitButton = styled(Button)`
@@ -53,10 +53,10 @@ const SubmitButton = styled(Button)`
 
 export default function ContactMeSection() {
 	return (
-		<ContactMeContainer fluid className="py-5">
+		<ContactMeContainer fluid className="py-5" id="contact">
 			<ContactFormBox>
 				<Row>
-					<Col md={4} lg={6} className="d-flex">
+					<Col md={4} lg={6} className="d-flex justify-content-center align-items-center">
 						<SendEmailImg src={SendMailIcon} alt="https://freeicons.io/icon-list/geometric-ui-icons" />
 					</Col>
 					<Col md={8} lg={6} className="px-sm-5 px-md-4 px-lg-5 py-4">
