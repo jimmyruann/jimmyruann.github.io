@@ -12,6 +12,7 @@ import ReactIcon from "../../assets/images/icon/react.png";
 import BootstrapIcon from "../../assets/images/icon/bootstrap.png";
 import MaterialUiIcon from "../../assets/images/icon/material-ui.png";
 import GraphlQLIcon from "../../assets/images/icon/graphql.png";
+import PythonIcon from "../../assets/images/icon/python.png";
 import { IconListType } from "../../types";
 
 const SideBarNavigationSection = styled.div``;
@@ -68,9 +69,9 @@ export default function TopSection() {
 			path: TypescriptIcon,
 		},
 		{
-			name: "HTML5",
+			name: "Python",
 			url: "",
-			path: HTML5Icon,
+			path: PythonIcon,
 		},
 		{
 			name: "Node JS",
@@ -83,20 +84,21 @@ export default function TopSection() {
 			path: ReactIcon,
 		},
 		{
-			name: "Bootstrap",
-			url: "",
-			path: BootstrapIcon,
-		},
-		{
-			name: "Material UI",
-			url: "",
-			path: MaterialUiIcon,
-		},
-		{
 			name: "GraphQL",
 			url: "",
 			path: GraphlQLIcon,
 		},
+		{
+			name: "HTML5",
+			url: "",
+			path: HTML5Icon,
+		},
+		{
+			name: "Bootstrap",
+			url: "",
+			path: BootstrapIcon,
+		},
+		
 	];
 
 	return (
@@ -104,7 +106,7 @@ export default function TopSection() {
 			<SideBarNavigationSection id="sidebarTopSection" className="p-4">
 				<MyImage src={MyImageFile} alt="Jimmy Ruan" />
 				<NameHeading>Manjue Jimmy Ruan</NameHeading>
-				<NameSubHeading>Full Stack Web Developer</NameSubHeading>
+				<NameSubHeading>University Student</NameSubHeading>
 				<SkillIcons>
 					<Row>
 						{IconList.map((each, i) => {

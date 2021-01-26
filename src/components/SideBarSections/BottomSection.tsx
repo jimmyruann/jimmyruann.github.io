@@ -4,7 +4,9 @@ import LocationCityIcon from "@material-ui/icons/LocationCity";
 import PhoneIcon from "@material-ui/icons/Phone";
 import EmailIcon from "@material-ui/icons/Email";
 
-const SideBarNavigationSection = styled.div``;
+const SideBarNavigationSection = styled.div`
+	font-family: "Lato", sans-serif;
+`;
 
 const MyResumeButton = styled.button`
 	background-color: #fff;
@@ -13,7 +15,6 @@ const MyResumeButton = styled.button`
 	width: 100%;
 	height: 40px;
 	text-transform: uppercase;
-	font-family: "Lato", sans-serif;
 	font-weight: 700;
 	color: #797d7f;
 	transition: all 0.1s ease-in;
@@ -42,8 +43,9 @@ const ContactInfo = styled.a`
 
 const ContactInfoText = styled.span`
 	text-transform: uppercase;
-	font-size: 15px;
-	margin-left: 1rem;
+	font-size: 13px;
+	margin-left: 0.8rem;
+	font-weight: 400;
 `;
 
 export default function BottomSection() {
@@ -53,7 +55,7 @@ export default function BottomSection() {
 				<MyResumeButton>Download Resume</MyResumeButton>
 			</a>
 			<ContactInfos>
-				<ContactInfo href="#">
+				<ContactInfo href="https://www.google.com/maps/place/Sydney+NSW" target="__blank">
 					<LocationCityIcon /> <ContactInfoText>Sydney, Australia</ContactInfoText>
 				</ContactInfo>
 				<ContactInfo href="tel:+61 412 088 009">
