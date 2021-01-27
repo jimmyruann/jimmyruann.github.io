@@ -96,14 +96,15 @@ export default function ContactMeSection() {
 				"user_K1sMN7Kmb1kyDG0ilBSyI"
 			)
 			.then((response) => {
+				name.onChange({ target: { value: "" } });
+				email.onChange({ target: { value: "" } });
+				message.onChange({ target: { value: "" } });
 				setIsSending(false);
 				setSuccess("We'll be in touch soon!");
-				console.log("SUCCESS!", response.status, response.text);
 			})
 			.catch((error) => {
 				setIsSending(false);
 				setError("Something went wrong. Please end email to jimmyruan@hotmail.com.");
-				console.log("FAILED...", error);
 			});
 	}
 
@@ -111,10 +112,10 @@ export default function ContactMeSection() {
 		<ContactMeContainer fluid className="py-5" id="contact">
 			<ContactFormBox>
 				<Row>
-					<Col md={4} lg={6} className="d-flex justify-content-center align-items-center">
+					<Col md={4} lg={5} className="d-flex justify-content-center align-items-center">
 						<SendEmailImg src={SendMailIcon} alt="https://freeicons.io/icon-list/geometric-ui-icons" />
 					</Col>
-					<Col md={8} lg={6} className="px-sm-5 px-md-4 px-lg-5 py-4">
+					<Col md={8} lg={7} className="px-sm-5 px-md-4 px-lg-5 py-4">
 						<Heading className="mb-4">Let's Have a Chat</Heading>
 						{error && <Alert variant="danger">{error}</Alert>}
 						{success && <Alert variant="success">{success}</Alert>}
