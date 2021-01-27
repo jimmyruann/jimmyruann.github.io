@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { Col, Container, Row, CardDeck, Card } from "react-bootstrap";
 import PottsPointLaundry from "../../assets/images/pottspointlaundry.png";
 import JimmyRuannSite from "../../assets/images/jimmyruann.png";
-import StaticBackgroundImage from "../../assets/images/background2.jpg";
+import StaticBackgroundImage from "../../assets/images/background2-min.jpg";
 
 const ExampleWorkContainer = styled(Container)`
 	background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(175, 96, 26, 0.8)), url(${StaticBackgroundImage});
