@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { Row, Col } from "react-bootstrap";
 
 import SideBarComponent from "./components/SideBarComponent";
-import ContentComponent from "./components/ContentComponent"
+import ContentComponent from "./components/ContentComponent";
 
 const SideBarCol = styled(Col)`
 	padding: 0;

@@ -45,8 +45,8 @@ const ExampleWorkImageText = styled(HeadingStyles)`
 export default function ExampleWorkSection() {
 	return (
 		<ExampleWorkContainer fluid className="px-5">
-			<Heading className="pt-5">Example Works</Heading>
-			<SubHeading className="mt-4 mb-5">Some of my most noticable work for my client and myself.</SubHeading>
+			<Heading className="pt-5">My Projects</Heading>
+			<SubHeading className="mt-4 mb-5">Some of my most noticable projects for myself and others.</SubHeading>
 			<Container className="px-5">
 				<br />
 				<br />
