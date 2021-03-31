@@ -37,7 +37,7 @@ export default function ExampleWorkSection() {
 			<SubHeading>Some of my most noticable projects for myself and others.</SubHeading>
 			<Container className="px-0">
 				<Row>
-					<Col className="col-md-12 col-lg-6 py-4">
+					<Col className="col-12 col-lg-6 py-4">
 						<Card className="h-100">
 							<Card.Img variant="top" src={JimmyRuannSite} />
 							<Card.Body className="border-top">
@@ -50,7 +50,7 @@ export default function ExampleWorkSection() {
 							</Card.Body>
 						</Card>
 					</Col>
-					<Col className="col-md-12 col-lg-6 py-4">
+					<Col className="col-12 col-lg-6 py-4">
 						<Card className="h-100">
 							<Card.Img variant="top" src={PottsPointLaundry} />
 							<Card.Body className="border-top">
