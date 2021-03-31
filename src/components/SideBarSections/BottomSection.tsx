@@ -4,6 +4,9 @@ import LocationCityIcon from "@material-ui/icons/LocationCity";
 import PhoneIcon from "@material-ui/icons/Phone";
 import EmailIcon from "@material-ui/icons/Email";
 
+import GitHubLogo from "../../assets/images/icon/github_mark_white.png";
+import LinkedinLogo from "../../assets/images/icon/linkedin_mark.png";
+
 const SideBarNavigationSection = styled.div`
 	font-family: "Lato", sans-serif;
 `;
@@ -26,13 +29,13 @@ const MyResumeButton = styled.button`
 
 const MyTranscriptButton = styled(MyResumeButton)`
 	margin-top: 1rem;
-	background-color: #5DADE2;
+	background-color: #5dade2;
 	color: #fff;
 	&:hover {
 		background-color: #fff;
-		color: #2874A6;
+		color: #2874a6;
 	}
-`
+`;
 
 const ContactInfos = styled.div`
 	display: flex;
@@ -58,6 +61,12 @@ const ContactInfoText = styled.span`
 	font-weight: 400;
 `;
 
+const IconImage = styled.img`
+	width: 32px;
+	height: 32px;
+	display: inline-block;
+`;
+
 export default function BottomSection() {
 	return (
 		<SideBarNavigationSection id="sidebarBottomSection" className="px-4 pt-2 pb-4">
@@ -67,6 +76,15 @@ export default function BottomSection() {
 			<a href="/Manjue%20Jimmy%20Ruan%20Transcript.pdf" target="__blank">
 				<MyTranscriptButton>Transcript</MyTranscriptButton>
 			</a>
+			<div className="mt-4">
+				<a href="https://github.com/jimmyruann">
+					<IconImage src={GitHubLogo} alt="Github" className="mr-3" />
+				</a>
+				<a href="https://www.linkedin.com/in/jimmyruann/">
+					<IconImage src={LinkedinLogo} alt="Linkedidn" />
+				</a>
+			</div>
+
 			<ContactInfos>
 				<ContactInfo href="https://www.google.com/maps/place/Sydney+NSW" target="__blank">
 					<LocationCityIcon /> <ContactInfoText>Sydney, Australia</ContactInfoText>

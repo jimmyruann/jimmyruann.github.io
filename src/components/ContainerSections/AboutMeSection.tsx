@@ -58,10 +58,11 @@ export default function AboutMeSection() {
 		<Container className="px-sm-0 px-md-5 py-5">
 			<div className="text-center mb-5">
 				<Heading className="mb-4">What I Do</Heading>
-				<SubHeading>
+				{/* <SubHeading>
 					I advise and help individuals and small businesses with their profit making websites and
 					cybersecurity.
-				</SubHeading>
+				</SubHeading> */}
+				<SubHeading>I do a lot of things :)</SubHeading>
 			</div>
 			<Row className="m-0">
 				<Col sm={12} lg={6} className="mb-5">

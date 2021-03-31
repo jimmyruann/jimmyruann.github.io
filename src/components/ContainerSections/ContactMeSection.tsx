@@ -109,7 +109,7 @@ export default function ContactMeSection() {
 	}
 
 	return (
-		<ContactMeContainer fluid className="py-5" id="contact">
+		<ContactMeContainer fluid className="p-5" id="contact">
 			<ContactFormBox>
 				<Row>
 					<Col md={4} lg={5} className="d-flex justify-content-center align-items-center">

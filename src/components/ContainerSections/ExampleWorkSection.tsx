@@ -1,8 +1,8 @@
 import React from "react";
 import styled from "styled-components";
-import { Col, Container, Row, CardDeck, Card } from "react-bootstrap";
-import PottsPointLaundry from "../../assets/images/pottspointlaundry.png";
-import JimmyRuannSite from "../../assets/images/jimmyruann.png";
+import { Col, Row, Container, Card } from "react-bootstrap";
+import PottsPointLaundry from "../../assets/images/example_work/potts-point-laundry.jpg";
+import JimmyRuannSite from "../../assets/images/example_work/jimmyruan-portfolio.jpg";
 import StaticBackgroundImage from "../../assets/images/background2-min.jpg";
 
 const ExampleWorkContainer = styled(Container)`
@@ -28,35 +28,61 @@ const SubHeading = styled(HeadingStyles)`
 	margin: 0 auto;
 `;
 
-const CustomCol = styled(Col)`
-	padding: 0;
-`;
-
-type ExampleWorkImageProps = {
-	src: string;
-};
-
-const ExampleWorkImageText = styled(HeadingStyles)`
-	text-align: center;
-	font-size: 1.8rem;
-	display: none;
-`;
+// Image must be 1366 x 768
 
 export default function ExampleWorkSection() {
 	return (
-		<ExampleWorkContainer fluid className="px-5">
-			<Heading className="pt-5">My Projects</Heading>
-			<SubHeading className="mt-4 mb-5">Some of my most noticable projects for myself and others.</SubHeading>
-			<Container className="px-5">
-				<br />
-				<br />
-				<br />
-				<br />
-				<br />
-				<br />
-				<br />
-				<br />
-				<br />
+		<ExampleWorkContainer fluid className="p-5">
+			<Heading className="mb-4">My Projects</Heading>
+			<SubHeading>Some of my most noticable projects for myself and others.</SubHeading>
+			<Container className="px-0">
+				<Row>
+					<Col className="col-md-12 col-lg-6 py-4">
+						<Card className="h-100">
+							<Card.Img variant="top" src={JimmyRuannSite} />
+							<Card.Body className="border-top">
+								<Card.Title>Portfolio Website</Card.Title>
+
+								<Card.Text>
+									Personal portfolio website built with React.js and Bootstrap. The website is hosted
+									on Github Page.
+								</Card.Text>
+							</Card.Body>
+						</Card>
+					</Col>
+					<Col className="col-md-12 col-lg-6 py-4">
+						<Card className="h-100">
+							<Card.Img variant="top" src={PottsPointLaundry} />
+							<Card.Body className="border-top">
+								<Card.Title>Potts Point Laundry</Card.Title>
+								<Card.Text>
+									Modern business website for{" "}
+									<a href="https://www.pottspointlaundry.com/">Potts Point Laundry</a> built using
+									React.js and Tailwind CSS.
+								</Card.Text>
+							</Card.Body>
+						</Card>
+					</Col>
+				</Row>
+
+				{/* <CardDeck>
+					<Card>
+						<CustomCardImage variant="top" src={JimmyRuannSite} />
+						<Card.Body className="border-top">
+							<a href="https://jimmyruann.github.io/">
+								<Card.Title className="m-0">My Portfolio</Card.Title>
+							</a>
+						</Card.Body>
+					</Card>
+					<Card>
+						<CustomCardImage variant="top" src={PottsPointLaundry} />
+						<Card.Body className="border-top">
+							<a href="https://www.pottspointlaundry.com/">
+								<Card.Title className="m-0">Potts Point Laundry</Card.Title>
+							</a>
+						</Card.Body>
+					</Card>
+				</CardDeck> */}
 			</Container>
 		</ExampleWorkContainer>
 	);

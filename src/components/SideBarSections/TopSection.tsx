@@ -9,10 +9,11 @@ import TypescriptIcon from "../../assets/images/icon/ts.png";
 import HTML5Icon from "../../assets/images/icon/html5.png";
 import NodeJSIcon from "../../assets/images/icon/nodejs.png";
 import ReactIcon from "../../assets/images/icon/react.png";
-import BootstrapIcon from "../../assets/images/icon/bootstrap.png";
-import MaterialUiIcon from "../../assets/images/icon/material-ui.png";
+// import BootstrapIcon from "../../assets/images/icon/bootstrap.png";
 import GraphlQLIcon from "../../assets/images/icon/graphql.png";
 import PythonIcon from "../../assets/images/icon/python.png";
+import TailwindCSSIcon from "../../assets/images/icon/tailwind.svg";
+
 import { IconListType } from "../../types";
 
 const SideBarNavigationSection = styled.div``;
@@ -69,19 +70,14 @@ export default function TopSection() {
 			path: TypescriptIcon,
 		},
 		{
-			name: "Python",
-			url: "",
-			path: PythonIcon,
-		},
-		{
-			name: "Node JS",
-			url: "",
-			path: NodeJSIcon,
-		},
-		{
 			name: "React JS",
 			url: "",
 			path: ReactIcon,
+		},
+		{
+			name: "Tailwind CSS",
+			url: "",
+			path: TailwindCSSIcon,
 		},
 		{
 			name: "GraphQL",
@@ -89,16 +85,20 @@ export default function TopSection() {
 			path: GraphlQLIcon,
 		},
 		{
+			name: "Node JS",
+			url: "",
+			path: NodeJSIcon,
+		},
+		{
+			name: "Python",
+			url: "",
+			path: PythonIcon,
+		},
+		{
 			name: "HTML5",
 			url: "",
 			path: HTML5Icon,
 		},
-		{
-			name: "Bootstrap",
-			url: "",
-			path: BootstrapIcon,
-		},
-		
 	];
 
 	return (
