@@ -57,8 +57,10 @@ export default function ExampleWorkSection() {
 								<Card.Title>Potts Point Laundry</Card.Title>
 								<Card.Text>
 									Modern business website for{" "}
-									<a href="https://www.pottspointlaundry.com/">Potts Point Laundry</a> built using
-									React.js and Tailwind CSS.
+									<a href="https://www.pottspointlaundry.com/" target="__blank">
+										Potts Point Laundry
+									</a>{" "}
+									built using React.js and Tailwind CSS.
 								</Card.Text>
 							</Card.Body>
 						</Card>
