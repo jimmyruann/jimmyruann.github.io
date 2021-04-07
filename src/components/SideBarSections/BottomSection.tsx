@@ -70,10 +70,10 @@ const IconImage = styled.img`
 export default function BottomSection() {
 	return (
 		<SideBarNavigationSection id="sidebarBottomSection" className="px-4 pt-2 pb-4">
-			<a href="/Manjue%20Jimmy%20Ruan%20Resume.pdf" target="__blank">
+			<a href="/Jimmy%20Ruan%20Resume.pdf" target="__blank">
 				<MyResumeButton>Resume</MyResumeButton>
 			</a>
-			<a href="/Manjue%20Jimmy%20Ruan%20Transcript.pdf" target="__blank">
+			<a href="/Jimmy%20Ruan%20Transcript.pdf" target="__blank">
 				<MyTranscriptButton>Transcript</MyTranscriptButton>
 			</a>
 			<div className="mt-4">

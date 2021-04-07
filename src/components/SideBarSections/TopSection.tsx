@@ -105,7 +105,7 @@ export default function TopSection() {
 		<>
 			<SideBarNavigationSection id="sidebarTopSection" className="p-4">
 				<MyImage src={MyImageFile} alt="Jimmy Ruan" />
-				<NameHeading>Manjue Jimmy Ruan</NameHeading>
+				<NameHeading>Jimmy Ruan</NameHeading>
 				<NameSubHeading>University Student</NameSubHeading>
 				<SkillIcons>
 					<Row>
