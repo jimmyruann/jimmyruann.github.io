@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.22399748.chunk.css",
-    "main.js": "/static/js/main.d869fc0b.chunk.js",
-    "main.js.map": "/static/js/main.d869fc0b.chunk.js.map",
+    "main.js": "/static/js/main.8e010910.chunk.js",
+    "main.js.map": "/static/js/main.8e010910.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.800cc0fb.js",
     "runtime-main.js.map": "/static/js/runtime-main.800cc0fb.js.map",
     "static/css/2.325dfaf0.chunk.css": "/static/css/2.325dfaf0.chunk.css",
@@ -18,7 +18,7 @@
     "static/media/background2-min.71e8db1e.jpg": "/static/media/background2-min.71e8db1e.jpg",
     "static/media/database.74cebd35.svg": "/static/media/database.74cebd35.svg",
     "static/media/graphql.e568a90f.png": "/static/media/graphql.e568a90f.png",
-    "static/media/jimmyruan-portfolio.eacd88fb.jpg": "/static/media/jimmyruan-portfolio.eacd88fb.jpg",
+    "static/media/jimmyruan-portfolio.ba79408e.jpg": "/static/media/jimmyruan-portfolio.ba79408e.jpg",
     "static/media/me.deb3be01.jpg": "/static/media/me.deb3be01.jpg",
     "static/media/multiPlatform.3ae2d05d.svg": "/static/media/multiPlatform.3ae2d05d.svg",
     "static/media/network.53cfd496.svg": "/static/media/network.53cfd496.svg",
@@ -32,6 +32,6 @@
     "static/css/2.325dfaf0.chunk.css",
     "static/js/2.3d255d98.chunk.js",
     "static/css/main.22399748.chunk.css",
-    "static/js/main.d869fc0b.chunk.js"
+    "static/js/main.8e010910.chunk.js"
   ]
 }
